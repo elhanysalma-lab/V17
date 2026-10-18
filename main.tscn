@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8x_noury_2026_12fps"]
-
-[ext_resource type="Script" path="res://agents/render_scene.gd" id="1_abcde"]
-
-[node name="MainCinematicScene" type="Node3D"]
-script = ExtResource("1_abcde")
