@@ -1,4 +1,4 @@
-name: Noury 12FPS Studio Pipeline
+name: Noury 4-15 Min Pipeline
 
 on:
   push:
@@ -22,18 +22,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
-      - name: Install Python Dependencies
-        run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-      - name: Run Ultimate Studio Supervisor
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - name: Run Studio Production (Long Video Generation)
         run: python agents/agent_supervisor.py
 
-      - name: Upload Generated Movie as Artifact
+      - name: Upload Final 4-15 Min YouTube Video
         uses: actions/upload-artifact@v4
         with:
-          name: noury-pixar-final-movie
+          name: noury-youtube-4minutes
           path: output_movies/
