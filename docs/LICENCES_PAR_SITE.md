@@ -1,2 +1,0 @@
-# Licences
-Toutes les ressources utilisées sont libres de droits.
