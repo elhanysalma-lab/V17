@@ -1,1 +1,0 @@
-print('[Scriptwriter] OK')

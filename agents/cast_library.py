@@ -1,1 +1,0 @@
-print('[Cast] Yakine=Fille, Nour=Garçon')

@@ -1,1 +1,0 @@
-print('[Duration] 4-15 min OK')
