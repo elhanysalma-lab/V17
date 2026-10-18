@@ -1,5 +1,6 @@
 name: Noury V17 Factory
 
+# تحديد أحداث التشغيل (عند الرفع push أو يدوياً)
 on:
   push:
     branches: [ main, master ]
