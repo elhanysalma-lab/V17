@@ -1,9 +1,0 @@
-name: Noury V17 Factory
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run Pipeline
-        run: python agents/agent_supervisor.py
