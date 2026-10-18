@@ -1,14 +1,1 @@
-[
-    {
-        "character": "Yakine",
-        "type": "dialogue",
-        "language": "ar-XA",
-        "text": "مرحباً بكم يا أصدقائي في مغامرتنا اليوم! سر البيت العتيق في انتظارنا."
-    },
-    {
-        "character": "Nour",
-        "type": "song",
-        "language": "ar-XA",
-        "text": "<speak><prosody rate='slow' pitch='+3st'>نحلق فوق الأفق البعيد، ننشر للأحلام نشيداً جديداً!</prosody></speak>"
-    }
-]
+[]
