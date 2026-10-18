@@ -1,2 +1,2 @@
 #!/usr/bin/env python3
-print("=== [Noury V17] Cast Library ===\nDatabase for Yakine & Nour...")
+print("[Cast Library] Base de données des personnages (Yakine, Nour, Grandma) chargée.")

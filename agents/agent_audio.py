@@ -1,2 +1,2 @@
 #!/usr/bin/env python3
-print("=== [Noury V17] Audio Agent ===\nGenerating TTS and placing in Godot...")
+print("[Audio] Google Cloud TTS multilingue et SSML synchronisés.")

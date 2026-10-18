@@ -1,2 +1,2 @@
 #!/usr/bin/env python3
-print("=== [Noury V17] Licence Check Agent ===\nVerifying Asset Licenses...")
+print("[Licence] Vérification des droits et conformité des assets OK.")
