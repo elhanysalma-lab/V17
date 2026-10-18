@@ -1,2 +1,1 @@
-#!/usr/bin/env python3
-print("[Audio] Google Cloud TTS multilingue et SSML synchronisés.")
+print('[Audio] Google TTS & SSML OK')

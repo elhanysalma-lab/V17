@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 def run_step(name, script_path):
-    print(f"\n=== [NOURY PIXAR V2026 - MEGA STUDIO] Étape : {name} ===")
+    print(f"\n=== [NOURY PIXAR 12 FPS] Étape : {name} ===")
     if not script_path.exists():
         print(f"⚠️ Avertissement: {script_path} introuvable.")
         return
@@ -17,28 +17,28 @@ def run_step(name, script_path):
 
 def main():
     print("=======================================================================")
-    print("=== Noury Pixar V2026 - Absolute Infinite Mega Studio Framework     ===")
+    print("=== Noury Pixar Studio - 12 FPS Classic Animation Pipeline          ===")
     print("=======================================================================")
     
     base_dir = Path(__file__).resolve().parent
     
-    # 100% Intégral - Tous les modules, agents, shaders, configs et scripts de déploiement
     run_step("1. Directeur Créatif & Multilingue", base_dir / "agent_creative_generator.py")
-    run_step("2. Traitement des Personnages & Normal Maps", base_dir / "agent_character_generator.py")
-    run_step("3. Scénariste & Structuration", base_dir / "agent_scriptwriter.py")
-    run_step("4. Directeur de Scène & Scénographie", base_dir / "agent_director.py")
-    run_step("5. Synthèse Vocale Multilingue & SSML", base_dir / "agent_audio.py")
-    run_step("6. Correction & Synchronisation Temporelle (4-15 min)", base_dir / "agent_bounded_correction.py")
-    run_step("7. Réalisation Caméra & DOF", base_dir / "agent_camera_director.py")
-    run_step("8. Moteur Godot 4 (SDFGI + Fog + ACES + Wind)", base_dir / "render_scene.gd")
-    run_step("9. Montage Vidéo Final (FFmpeg)", base_dir / "agent_montage.py")
-    run_step("10. Miniature YouTube", base_dir / "agent_thumbnail.py")
-    run_step("11. Métadonnées & SEO YouTube", base_dir / "agent_youtube_metadata.py")
-    run_step("12. Publication Automatique YouTube", base_dir / "agent_youtube_upload.py")
-    run_step("13. Vérification des Licences", base_dir / "agent_licence_check.py")
-    run_step("14. Contrôle Qualité Final", base_dir / "agent_quality_control.py")
+    run_step("2. Directeur Autonome (Supervision & Décisions)", base_dir / "agent_autonomous_director.py")
+    run_step("3. Traitement des Personnages & Normal Maps", base_dir / "agent_character_generator.py")
+    run_step("4. Scénariste & Structuration", base_dir / "agent_scriptwriter.py")
+    run_step("5. Directeur de Scène & Scénographie", base_dir / "agent_director.py")
+    run_step("6. Synthèse Vocale Multilingue & SSML", base_dir / "agent_audio.py")
+    run_step("7. Correction & Synchronisation Temporelle (4-15 min)", base_dir / "agent_bounded_correction.py")
+    run_step("8. Réalisation Caméra & DOF", base_dir / "agent_camera_director.py")
+    run_step("9. Moteur Godot 4 (12 FPS Cel-Animation Setup)", base_dir / "render_scene.gd")
+    run_step("10. Montage Vidéo Final (FFmpeg)", base_dir / "agent_montage.py")
+    run_step("11. Miniature YouTube", base_dir / "agent_thumbnail.py")
+    run_step("12. Métadonnées & SEO YouTube", base_dir / "agent_youtube_metadata.py")
+    run_step("13. Publication Automatique YouTube", base_dir / "agent_youtube_upload.py")
+    run_step("14. Vérification des Licences", base_dir / "agent_licence_check.py")
+    run_step("15. Contrôle Qualité Final", base_dir / "agent_quality_control.py")
     
-    print("\n🎉 [SUCCÈS ABSOLU V2026] Le méga studio est complet à 100% !")
+    print("\n🎉 [SUCCÈS ABSOLU] Le film 12 FPS est entièrement produit et prêt !")
 
 if __name__ == "__main__":
     main()
