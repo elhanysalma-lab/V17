@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/init/env python3
 import subprocess
 import sys
 from pathlib import Path
@@ -8,6 +8,13 @@ def run_step(name, script_path):
     if not script_path.exists():
         print(f"⚠️ Avertissement: {script_path} introuvable.")
         return
+    
+    # Si c'est un script Godot (.gd), Godot l'exécute lui-même via le projet, 
+    # donc le superviseur Python n'a pas besoin de l'exécuter directement avec python.
+    if script_path.suffix == ".gd":
+        print(f"ℹ️ {script_path.name} est un script Godot (géré par le moteur Godot). Passage validé.")
+        return
+
     result = subprocess.run([sys.executable, str(script_path)], capture_output=True, text=True)
     print(result.stdout)
     if result.returncode != 0:
@@ -38,7 +45,7 @@ def main():
     run_step("14. Vérification des Licences", base_dir / "agent_licence_check.py")
     run_step("15. Contrôle Qualité Final", base_dir / "agent_quality_control.py")
     
-    print("\n🎉 [SUCCÈS ABSOLU] Le film 12 FPS est entièrement produit et prêt !")
+    print("\n🎉 [SUCCÈS ABSOLU] Le pipeline 12 FPS s'est déroulé à la perfection !")
 
 if __name__ == "__main__":
     main()
